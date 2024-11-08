@@ -12,7 +12,7 @@ public class Bill3 {
 
 		double selfPayment = Math.ceil((double)resturantBill / 3);
 
-		String output = "Dear " + name3 + ", " + name2 + ", and " + name1 + ": pay " + selfPayment + " Shekels each.";
+		String output = "Dear " + name3 + ", " + name2 + ", and " + name1 + ": pay " + selfPayment + " Shekels each .";
 
 		System.out.println(output);
 	       
