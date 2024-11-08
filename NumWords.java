@@ -10,7 +10,7 @@ public class NumWords {
 
 		int hundreds = singleInteger / 100;
 
-		String output = hundreds + " hundreds, " + tens + " tens, and " + ones + " ones .";
+		String output = hundreds + " hundreds, " + tens + " tens, and " + ones + " ones.";
 
 		System.out.println(output);
 	}
