@@ -16,11 +16,26 @@ public class TimeFormat {
 		String partOftheday = "";
 
 		int newHours = hours;
+
+		String newMinutes = "";
+
+		if (minutes < 10) {
+
+			newMinutes = "0" + minutes;
+		
+		} else { 
+
+			newMinutes = Integer.toString(minutes);
+		}
         
 		if (hours < 12) {
 			
 			partOftheday = "AM";
 		
+		} else if (hours == 12) {
+
+			partOftheday = "PM";
+
 		} else {
 
 			partOftheday = "PM";
@@ -32,7 +47,7 @@ public class TimeFormat {
 		// using the "String.format" in order to ensure that the minute part in the output will contain two chars
 		// somtimes if the "minute" contains onle the number zero' it can omit one zero while printing the output
 
-		String output = newHours + ":" + String.format("%02d", minutes) + " " + partOftheday;
+		String output = newHours + ":" + newMinutes + " " + partOftheday;
 		
 		System.out.println(output);
 		
